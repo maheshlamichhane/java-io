@@ -1,0 +1,20 @@
+Serialization:-> The process of writing state of an object to a file is called serialization.but strictly speaking
+it is the process of converting an object from java supported form into either file supported form or network
+supported form.
+by using fileoutputstream and objectoutputstream classes we can implement serialization.
+
+Deserialization:-> The process of reading state of an object from a file is called deserialization.but strictly 
+speaking it is the process of converting an object from either file supported form or network supported form into
+java supported form.
+by using fileinputstream and objectinputstream classes we can implement deserialization.
+
+Note: we can seialize only serializable objects.an object is said to be serializable if and only if the corresponding
+implements serializable interface.serializable interface presents in java.io package and it doesn't contain any 
+methods.it is a marker interface.
+if we are trying to serialize non-serializable object then we will get runtime exception saying notserializable
+exception.
+
+Transient Keyword:-> transient modifier applicable only for variable but not for methods and classes.at the time of
+serialization if we don't want to save the value of a particular variable to meet security constraints then we
+should declare that varible as transient.
+

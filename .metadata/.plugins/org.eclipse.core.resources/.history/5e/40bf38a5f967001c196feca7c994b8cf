@@ -1,0 +1,14 @@
+FileWriter Class:-> we can use filewriter to write character data to the file.
+
+Constructor:-> 
+FileWriter fw = new FileWriter(String filename)
+FileWriter fw = new FileWriter(File f) 
+FileWriter fw = new FileWriter(String filename,boolean append)
+FileWriter fw = new FileWriter(File f,boolean append)
+
+ Note:-> if the specified file is not already available then all above constructors will create that file.
+ 
+ Methods:->
+ write(int ch) to write single character to a file
+ write(char[] ch) to write an array of characters
+ write(String s) to write string to the file

@@ -1,0 +1,13 @@
+package inheritance.serialization.with.only.parent.impl.serializable;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Dog d = new Dog();
+		System.out.println(d.legs+"..."+d.speak);
+		FileOutputStream fos = new FileOutputStream("inheritance-parent-impl.serialization.txt");
+
+	}
+
+}

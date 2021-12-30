@@ -1,0 +1,24 @@
+package serialization.and.deserialization.demo;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+
+public class Test {
+
+	public static void main(String[] args) throws IOException {
+		
+		Dog g = new Dog();
+		FileOutputStream fos = new FileOutputStream("abc.txt");
+		ObjectOutputStream oos = new ObjectOutputStream(fos);
+		oos.writeObject(g);
+		
+		FileInputStream fis = new FileInputStream("abc.txt");
+		ObjectInputStream ois = new ObjectInputStream(fis);
+		Dog g1 = (Dog) ois.readObject();
+
+	}
+
+}

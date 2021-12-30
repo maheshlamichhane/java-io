@@ -1,0 +1,5 @@
+package inheritance.serialization.with.only.child.impl.serializable;
+
+public class Dog extends Animal implements Serializable {
+	String speak ="bhow bhow";
+}

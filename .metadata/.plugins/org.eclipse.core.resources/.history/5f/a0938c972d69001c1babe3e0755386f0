@@ -1,0 +1,17 @@
+package inheritance.serialization.with.only.parent.impl.serializable;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+
+public class Test {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		
+		Dog d = new Dog();
+		System.out.println(d.legs+"..."+d.speak);
+		FileOutputStream fos = new FileOutputStream("inheritance-parent-impl.serialization.txt");
+		ObjectOutputStream oos = new ObjectOutputStream(fos);
+
+	}
+
+}

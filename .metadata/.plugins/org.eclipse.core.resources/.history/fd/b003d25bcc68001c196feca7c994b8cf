@@ -1,0 +1,12 @@
+package object.graph.serialization.type.demo;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Dog d = new Dog();
+		FileOutputStream fos = new FileOutputStream();
+
+	}
+
+}

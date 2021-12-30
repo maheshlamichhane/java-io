@@ -1,0 +1,20 @@
+FileWriter Class:-> we can use filewriter to write character data to the file.
+
+Constructor:-> 
+FileWriter fw = new FileWriter(String filename)
+FileWriter fw = new FileWriter(File f) 
+FileWriter fw = new FileWriter(String filename,boolean append)
+FileWriter fw = new FileWriter(File f,boolean append)
+
+ Note:-> if the specified file is not already available then all above constructors will create that file.
+ 
+ Methods:->
+ write(int ch) to write single character to a file
+ write(char[] ch) to write an array of characters
+ write(String s) to write string to the file
+ flush() to give the gurantee that total data including last character will be returned to the file.
+ close() to close the writer
+ 
+ Note:- the main problem with the file writer is we have to insert line-seperator \n manually which is varied from
+ system to system.it is difficuti to the programmer.we can solve this problem by using BufferedWriter and PrintWriter
+ classes.

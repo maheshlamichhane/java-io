@@ -1,0 +1,5 @@
+package serialization.and.deserialization.demo;
+
+public class Rat implements Serializable{
+	String voice="chichicicihc";
+}

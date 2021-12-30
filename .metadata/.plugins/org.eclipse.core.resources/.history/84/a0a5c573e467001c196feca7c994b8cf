@@ -1,0 +1,11 @@
+package simple.file_class.program;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		File file = new File("abc.txt");
+
+	}
+
+}

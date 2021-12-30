@@ -1,0 +1,12 @@
+package serialization.and.deserialization.demo;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Dog g = new Dog();
+		FileOutputStream fos = new FileOutputStream("abc.txt");
+
+	}
+
+}

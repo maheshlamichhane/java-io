@@ -1,0 +1,6 @@
+PrintWriter:->
+-> it is the most enhanced writer to write character data to the file.
+-> the main advantage of printwriter over file writer and buffer writer is we can writer
+any type of primitive data directly to the file.
+
+Constructors:-> 

@@ -1,0 +1,12 @@
+package serialversion.uid.demo.program;
+
+public class Sender {
+
+	public static void main(String[] args) {
+		
+		Dog1 d1 = new Dog1();
+		
+
+	}
+
+}

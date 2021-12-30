@@ -1,0 +1,8 @@
+package serialization.and.deserialization.demo;
+
+public class Dog {
+	
+	int i=100;
+	int j=100;
+
+}

@@ -1,0 +1,11 @@
+package externalization.program.for_handling.serialization.flow;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		ExternalizableDemo demo = new Externalizable("Mahesh",27,484398);
+
+	}
+
+}

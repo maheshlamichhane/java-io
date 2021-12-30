@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;filereader.simple.program&apos; to &apos;2.FileWriter Class in Java IO/src&apos;&#x0D;&#x0A;- Original project: &apos;3.FileReader Class in Java IO&apos;&#x0D;&#x0A;- Destination element: &apos;2.FileWriter Class in Java IO/src&apos;&#x0D;&#x0A;- Original element: &apos;3.FileReader Class in Java IO/src/filereader.simple.program&apos;" description="Copy package" destination="=2.FileWriter Class in Java IO/src" element1="/src&lt;filereader.simple.program" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1640714888040" version="1.0"/>
+</session>

@@ -1,0 +1,13 @@
+package merging.two.file.one.by.one;
+
+import java.io.PrintWriter;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		PrintWriter pw = new PrintWriter("file3.txt");
+
+	}
+
+}

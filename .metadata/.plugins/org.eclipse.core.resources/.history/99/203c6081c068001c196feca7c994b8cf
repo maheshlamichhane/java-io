@@ -1,0 +1,21 @@
+package serialization.and.deserialization.demo;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+
+public class Test {
+
+	public static void main(String[] args) throws IOException {
+		
+		Dog g = new Dog();
+		FileOutputStream fos = new FileOutputStream("abc.txt");
+		ObjectOutputStream oos = new ObjectOutputStream(fos);
+		oos.writeObject(g);
+		
+		FileInputStream fis = new FileInputStrem("abc.txt");
+
+	}
+
+}

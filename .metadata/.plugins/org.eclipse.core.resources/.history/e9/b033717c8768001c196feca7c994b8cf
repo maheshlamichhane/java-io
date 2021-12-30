@@ -1,0 +1,2 @@
+In general we can use readers and writers to handle character data(text data),whereas we can use streams to handle
+binary data(like images,video,pdf,audio etc)

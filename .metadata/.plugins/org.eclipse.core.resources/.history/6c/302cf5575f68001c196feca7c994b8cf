@@ -1,0 +1,4 @@
+BufferedWriter:-> we can use bufferwriter to write character data to the file.
+
+Constructors:->
+BufferedWriter bw = new BufferedWriter(Writer w ) 

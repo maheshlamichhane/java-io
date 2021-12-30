@@ -1,0 +1,10 @@
+package serialversion.uid.demo.program;
+
+import java.io.Serializable;
+
+public class Dog1 implements Serializable {
+	
+	int i = 10;
+	int j = 20;
+
+}

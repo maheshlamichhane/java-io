@@ -1,0 +1,14 @@
+package customized.serialization.type.demo;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Account account = new Account();
+		System.out.println(account.username+"..."+account.password);
+		
+		FileOutputStream fos = new FileOutputStream("customize.txt");
+
+	}
+
+}

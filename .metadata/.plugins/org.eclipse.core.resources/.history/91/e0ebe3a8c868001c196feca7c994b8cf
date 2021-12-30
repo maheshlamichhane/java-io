@@ -1,0 +1,5 @@
+package serialization.and.deserialization.demo;
+
+public class Cat implements Serializable{
+	String voice="meow";
+}

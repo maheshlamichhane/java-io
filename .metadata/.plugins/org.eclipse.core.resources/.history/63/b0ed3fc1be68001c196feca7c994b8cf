@@ -1,0 +1,7 @@
+Serialization:-> The process of writing state of an object to a file is called serialization.but strictly speaking
+it is the process of converting an object from java supported form into either file supported form or network
+supported form.
+by using fileoutputstream and objectoutputstream classes we can implement serialization.
+
+Deserialization:-> 
+

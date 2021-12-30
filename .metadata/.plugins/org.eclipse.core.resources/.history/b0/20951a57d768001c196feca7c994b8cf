@@ -1,0 +1,5 @@
+package customized.serialization.type.demo;
+
+public class Account {
+
+}

@@ -1,0 +1,16 @@
+package serialization.and.deserialization.demo;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+
+public class Test {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		
+		Dog g = new Dog();
+		FileOutputStream fos = new FileOutputStream("abc.txt");
+		ObjectOutputStream oos = new ObjectOutputStream();
+
+	}
+
+}

@@ -1,0 +1,25 @@
+package merging.two.file.one.by.one;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+public class Test {
+
+	public static void main(String[] args) throws IOException {
+		
+		PrintWriter pw = new PrintWriter("file3.txt");
+		BufferedReader br1 = new BufferedReader(new FileReader("file1.txt"));
+		BufferedReader br2 = new BufferedReader(new FileReader("file2.txt"));
+		
+		String s = br1.readLine();
+		while(s != null) {
+			pw.println(s);
+		}
+		
+
+	}
+
+}

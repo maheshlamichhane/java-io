@@ -1,0 +1,12 @@
+package serialversion.uid.demo.program;
+
+public class Receiver {
+
+	public static void main(String[] args) {
+		
+		FileInputStream fis = new FileInputStream("serialversionuid.txt");
+		ObjectInputStream ois = new ObjectInputStream(fis);
+
+	}
+
+}

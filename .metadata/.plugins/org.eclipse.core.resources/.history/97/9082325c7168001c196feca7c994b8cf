@@ -1,0 +1,16 @@
+package bufferedreader.demo.program;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
+public class Test {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		
+		FileReader fr = new FileReader("abc.txt");
+		BufferedReader br = new BufferedReader(fr);
+		String line = br.readLine();
+	}
+
+}

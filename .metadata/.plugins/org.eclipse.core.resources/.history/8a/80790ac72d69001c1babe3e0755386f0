@@ -1,0 +1,24 @@
+package inheritance.serialization.with.only.parent.impl.serializable;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+
+public class Test {
+
+	public static void main(String[] args) throws IOException {
+		
+		Dog d = new Dog();
+		System.out.println(d.legs+"..."+d.speak);
+		FileOutputStream fos = new FileOutputStream("inheritance-parent-impl.serialization.txt");
+		ObjectOutputStream oos = new ObjectOutputStream(fos);
+		oos.writeObject(d);
+		
+		FileInputStream fis = new FileInputStream("inheritance-parent-impl.serialization.txt");
+		ObjectInputStream fis = ObjectInputStream(fis);
+
+	}
+
+}

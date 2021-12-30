@@ -1,0 +1,15 @@
+File Class-------------------------------->
+
+File file = new File("abc.txt") -> this line won't create any physical file first it will check is 
+there any physical file named with abc.txt is available or not.if it is available then f simply refers
+that file.if it is not available then we are just creating java file object to represent the name 
+abc.txt.
+
+Note: in UNIX everything is treated as a file. java file io concept is implemented based on UNIX 
+operating system.hence java file object can be used to represent both files and directories.
+
+Constructors:->
+File f = new File(String name)
+->
+File f = new File(String directory,name)
+File f = new File(File subdir, String name)

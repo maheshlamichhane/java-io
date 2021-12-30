@@ -1,0 +1,14 @@
+package simple.file.traversing.program;
+
+import java.io.File;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		File folder1 = new File("folder1");
+		File folder2 = new File("folder")
+
+	}
+
+}

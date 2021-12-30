@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;4.PrintWriter and PrintReader Class in Java IO/src/intro.txt&apos; to &apos;print-intro.txt&apos;" description="Rename resource &apos;intro.txt&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/intro.txt" name="print-intro.txt" stamp="1640762904942" updateReferences="true"/>
+</session>

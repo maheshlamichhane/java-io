@@ -1,0 +1,11 @@
+package inheritance.serialization.with.only.parent.impl.serializable;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

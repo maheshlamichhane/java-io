@@ -1,0 +1,30 @@
+package binary.file.write.with.bufferedoutputstream;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		
+		try {
+		    // create a writer
+		    FileOutputStream fos = new FileOutputStream(new File("output.dat"));
+		    BufferedOutputStream writer = new BufferedOutputStream(fos);
+
+		    // write data to file
+		    writer.write("Hey, there!".getBytes());
+		    writer.write("\n".getBytes());
+		    writer.write("How are you doing?".getBytes());
+
+		    // flush remaining bytes
+		    writer.flush();
+		    
+		    // close the writer
+		    writer.close();
+
+		} catch (IOException ex) {
+		    ex.printStackTrace();
+		}
+
+	}
+
+}

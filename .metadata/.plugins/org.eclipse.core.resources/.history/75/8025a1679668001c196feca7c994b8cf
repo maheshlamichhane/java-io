@@ -1,0 +1,16 @@
+package filtering.file.program;
+
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+
+public class Test {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		
+		PrintWriter pw = new PrintWriter("updated-data.txt");
+		BufferedReader br = new BufferedReader(new FileReader("orginal-data.txt"));
+		
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package printwrite.demo.program;
+
+import java.io.FileWriter;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+				FileWriter fw = new FileWriter("abc.txt");
+				PrintWriter out = new PrintWriter(fw);
+
+	}
+
+}

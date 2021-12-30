@@ -1,0 +1,65 @@
+Serialization:-> The process of writing state of an object to a file is called serialization.but strictly speaking
+it is the process of converting an object from java supported form into either file supported form or network
+supported form.
+by using fileoutputstream and objectoutputstream classes we can implement serialization.
+
+Deserialization:-> The process of reading state of an object from a file is called deserialization.but strictly 
+speaking it is the process of converting an object from either file supported form or network supported form into
+java supported form.
+by using fileinputstream and objectinputstream classes we can implement deserialization.
+
+Note: we can seialize only serializable objects.an object is said to be serializable if and only if the corresponding
+implements serializable interface.serializable interface presents in java.io package and it doesn't contain any 
+methods.it is a marker interface.
+if we are trying to serialize non-serializable object then we will get runtime exception saying notserializable
+exception.
+
+Transient Keyword:-> transient modifier applicable only for variable but not for methods and classes.at the time of
+serialization if we don't want to save the value of a particular variable to meet security constraints then we
+should declare that varible as transient.
+while performing serialization JVM ignores orginal value of transient variable and save default value to the file.
+hence transient means not to serialize.
+
+transient vs static:-> static variable won't participate in transient.static variable is not part of object state
+and hence it won't participate in serialization.due to this declaring static variable as transient there is no use.
+
+final vs transient:-> final variables will be participated in serialization directly by the value hence declaring a
+final variable as transient there is no impact.
+
+Note:-> if multiple objects are serialized into a single file then those objects can be deserialize on the order
+they are serialized means first objects get deserialize first and last object deserialize at last.
+
+we can serialize any no of objects to the file but in which order we serialized in the same order only we have to 
+deserialize that is order of objects is important in serialization.
+if we don't know order of objects in serialization.
+
+
+Object Graph Serialization:-> whenever we are serializing an object,the set of all objects which are reachable 
+from that objects will be serialized automatically. this group of objeccts is nothing but object graph.
+in object graph every object should be serializable.if at least is not serializable then we will get runtime 
+exception saying not serializable exception.
+
+Customized Serialization:-> During default serialization there may be a chance of loss of information because of 
+transient keyword.to recover this loss of information we should go for customized serialization.we can implement 
+customized serilization using two methods
+private void writeObject(ObjectOutputStream os)  throws Exception -> this method will be executed automatically at the time of serialization.
+private void readObject(ObjectInputStream is) throws Exception -> this method will be executed automatically at the time of deserialization.
+
+Note:
+-> the above methods are callback methods because these are executed automatically by the JVM.
+-> while performing which object serialization we have to do extraa work in the corresponding class we have to
+define above methods.for example, while performing account object serialization if we required to do extraa work in
+the account class we have to define above methods.
+
+before serialization and after serialization account object can provide proper username and password.
+Note:-programmer can't call private methods directly from outside of the class but JVM can call private methods 
+directly from outside of the class.
+
+Inheritance Serialization:-> 
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+package customized.serialization.type.demo;
+
+import java.io.Serializable;
+
+public class Account implements Serializable {
+	
+	String username="mahesh";
+	transient String password="lamichhane";
+	
+	private void writeObject(ObjectOutputStream os)  throws Exception{
+		
+	}
+
+}

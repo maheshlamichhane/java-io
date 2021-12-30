@@ -1,0 +1,11 @@
+package filewriter.demo.program;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		FileWriter writer = new FileWriter("myfile.txt");
+
+	}
+
+}

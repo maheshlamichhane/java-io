@@ -1,0 +1,13 @@
+package simple.file_class.program;
+
+import java.io.File;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		File file = new File("abc.txt");
+
+	}
+
+}

@@ -1,0 +1,25 @@
+package binary.file.write.with.fileoutputstream;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		try {
+		    // create a writer
+		    FileOutputStream fos = new FileOutputStream(new File("output.dat"));
+
+		    // write data to file
+		    fos.write("Hey, there!".getBytes());
+		    fos.write("\n".getBytes());
+		    fos.write("How are you doing?".getBytes());
+
+		    // close the writer
+		    fos.close();
+
+		} catch (IOException ex) {
+		    ex.printStackTrace();
+		}
+
+	}
+
+}

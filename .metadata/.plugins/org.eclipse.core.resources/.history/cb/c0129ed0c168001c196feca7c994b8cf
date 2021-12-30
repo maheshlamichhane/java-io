@@ -1,0 +1,15 @@
+package serialization.and.deserialization.demo;
+
+public class Dog implements serializable{
+	
+	int i=100;
+	int j=100;
+	
+	
+	public Dog() {
+		
+	}
+	
+	
+
+}

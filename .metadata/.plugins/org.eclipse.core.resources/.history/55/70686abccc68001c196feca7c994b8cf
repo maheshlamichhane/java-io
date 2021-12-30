@@ -1,0 +1,23 @@
+package object.graph.serialization.type.demo;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+
+public class Test {
+
+	public static void main(String[] args) throws IOException {
+		
+		Dog d = new Dog();
+		FileOutputStream fos = new FileOutputStream("myfile.txt");
+		ObjectOutputStream oos = new ObjectOutputStream(fos);
+		oos.writeObject(d);
+		
+		FileInputStream fis = new FileInputStream("myfile.txt");
+		ObjectInputStream fis = ObjectInputStream(fis);
+		
+
+	}
+
+}

@@ -1,0 +1,20 @@
+package filewriter.demo.program;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Test {
+
+	public static void main(String[] args) throws IOException {
+		
+		FileWriter writer = new FileWriter("myfile.txt");
+		writer.write("Mahesh Lamichhane");
+		writer.write("\n");
+		char[] chararray = {'A','B','C'};
+		writer.write(chararray);
+		writer.write("\n");
+		}
+
+	}
+
+}

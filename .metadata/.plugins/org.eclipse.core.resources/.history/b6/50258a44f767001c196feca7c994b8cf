@@ -1,0 +1,5 @@
+FileWriter Class:-> we can use filewriter to write character data to the file.
+
+Constructor:-> 
+FileWriter fw = new FileWriter(String filename)
+FileWriter fw = new FileWriter(File f)

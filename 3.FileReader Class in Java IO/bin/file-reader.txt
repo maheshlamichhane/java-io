@@ -1,0 +1,20 @@
+FileReader Class:->  We can use file reader to read character data from the file.
+
+Constructor:-
+FileReader fr = new FileReader(String name)
+FileReader fr = new FileReader(File f)
+
+Methods:->
+int read()
+int read(char[] ch) it reads ch array.it attempts to read n of characters into char array and returns no of characters
+copied from the file.
+void close()
+
+Note:-> by using filereader we can read data character by character which is not convenient to the programmer.
+
+Usage of filereader and filewriter is not recomended because 
+-> while writing data by file writer we have to insert lines seperator(\n) manually which is varied from system to system.
+it is difficult to the programmer.
+-> by using file reader we can read data character by character, which is not convinient to the programmer.
+
+to overcome these problems we should go for BufferedWriter and BufferedReader.

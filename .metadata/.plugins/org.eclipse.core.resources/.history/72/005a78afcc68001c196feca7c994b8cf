@@ -1,0 +1,17 @@
+package object.graph.serialization.type.demo;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+
+public class Test {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		
+		Dog d = new Dog();
+		FileOutputStream fos = new FileOutputStream("myfile.txt");
+		ObjectOutputStream oos = new ObjectOutputStream(fos);
+
+	}
+
+}

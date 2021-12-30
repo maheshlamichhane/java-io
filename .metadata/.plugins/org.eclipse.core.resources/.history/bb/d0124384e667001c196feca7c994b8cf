@@ -1,0 +1,7 @@
+File file = new File("abc.txt") -> this line won't create any physical file first it will check is 
+there any physical file named with abc.txt is available or not.if it is available then f simply refers
+that file.if it is not available then we are just creating java file object to represent the name 
+abc.txt.
+
+we can use java file object to represent directory also
+File f = new File("durga123")
